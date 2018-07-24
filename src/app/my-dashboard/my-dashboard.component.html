@@ -1,0 +1,51 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+   <select [(ngModel)]="optionSelected">
+      <option *ngFor = "let option of options" [value]="option.Value">
+        {{option.Name}}
+      </option>
+    </select>
+
+  <input type="text" [(ngModel)]="stock1">
+  <input type="text" [(ngModel)]="stock2">
+
+  <button id="search"(click)="search()">Search</button>
+  <mat-grid-list cols="2" rowHeight="350px">
+   
+  <span>{{stock1}}{{stock2}}</span>
+  
+    <mat-grid-tile *ngFor="let card of cards; index as i"  [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card lineChartContainer" style="display:inline-block;padding-bottom:21px;">
+        <mat-card-header>
+          <mat-card-title>
+            {{card.title}}
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content  class="dashboard-card-content ">
+          <div *ngIf="showIntraGraphs"class="chart">
+              <canvas *ngIf="i==0"  id="intraDailyOpenLineChart" style="margin-bottom:55px;"></canvas>
+              <canvas *ngIf="i==1"  id="intraDailyOpenLineChart2" style="margin-bottom:55px;"></canvas>
+              <canvas *ngIf="i==2"  id="intraDailyHighLowLineChart" style="margin-bottom:55px;"></canvas>
+              <canvas *ngIf="i==3"  id="intraDailyHighLowLineChart2" style="margin-bottom:55px;"></canvas>
+            </div>
+          <div *ngIf="showDailyGraphs" class="chart">
+              <canvas *ngIf="i==0"  id="dailyOpenLineChart" style="margin-bottom:55px;"></canvas>
+              <canvas *ngIf="i==1"  id="dailyOpenLineChart2" style="margin-bottom:55px;"></canvas>
+              <canvas *ngIf="i==2"  id="dailyHighLowLineChart" style="margin-bottom:55px;"></canvas>
+              <canvas *ngIf="i==3"  id="dailyHighLowLineChart2" style="margin-bottom:55px;"></canvas>
+            </div>
+          </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
+

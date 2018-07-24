@@ -1,0 +1,45 @@
+.grid-container {
+  margin-top: 20px;
+  margin-left:220px;
+}
+
+#stock1{
+  margin-left: 40%;
+  
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+  width:50%;
+  margin-top:-60px;
+}
+
+.chart{
+  width:550px;
+  height:300px;
+}
+
+
+.lineChartContainer{
+  padding-bottom: 21px;
+  display:inline-block;
+}
+
+#search{
+  background:#2A3132;
+  color:white;
+}

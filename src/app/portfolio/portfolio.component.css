@@ -1,0 +1,19 @@
+.grid-container {
+    margin-top: 20px;
+    margin-left:220px;
+  }
+  
+ .card1{
+     width:50%;
+     margin-left:40%;
+     display:block;
+     height:500px;
+     background-color:black;
+ }
+
+ .card2{
+    width:50%;
+    margin-left:40%;
+    display:block;
+    height:250px;
+}

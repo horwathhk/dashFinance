@@ -1,0 +1,28 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0,0,0,.24);
+  background: #2A3132;
+
+}
+
+.mat-list .mat-list-item, .mat-nav-list .mat-list-item,
+ .mat-selection-list .mat-list-item{
+  color: white;
+  font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+
+ }
+
+ 
+ 
+
+.mat-toolbar.mat-primary{
+  background: #2A3132;
+}
