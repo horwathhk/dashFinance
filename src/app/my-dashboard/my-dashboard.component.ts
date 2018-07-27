@@ -84,7 +84,6 @@ ngOnInit(){
 
 this.optionSelected = 0;
 
-
 }
 
 search(){

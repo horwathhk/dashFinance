@@ -12,7 +12,6 @@
   <button id="search"(click)="search()">Search</button>
   <mat-grid-list cols="2" rowHeight="350px">
    
-  <span>{{stock1}}{{stock2}}</span>
   
     <mat-grid-tile *ngFor="let card of cards; index as i"  [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card lineChartContainer" style="display:inline-block;padding-bottom:21px;">
