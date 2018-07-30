@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Chart } from "chart.js";
-import {ChartService} from "../chart.service"
+import { Chart } from 'chart.js';
+import {ChartService} from '../chart.service';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -11,28 +11,21 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PortfolioComponent implements OnInit {
 
-  BarChart:any=[];
-  
-  
+  BarChart: any = [];
+
   cards = [
     {cols: 2, rows: 1 },
     {cols: 1, rows: 1 },
     {cols: 1, rows: 1 },
     {cols: 1, rows: 1 }
   ];
-  
-  
-  
-  
-  constructor(private http: HttpClient, private chart:ChartService ) { }
 
-  ngOnInit() {
-    
-  
-}
+  constructor(private http: HttpClient, private chart: ChartService ) { }
 
-portfolio(){
-this.chart.showPortfolio();
-}
+  ngOnInit() {}
+
+  portfolio() {
+    this.chart.showPortfolio();
+  }
 }
 
