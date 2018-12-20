@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+## Description
+This app was used as practice in creating an Angular-app. The app is a financial dashboard that allows for the user to search any two stocks and then view their current performance in the stock market using an open financial API and then graphing the data using GraphJS.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
